@@ -13,7 +13,7 @@ function criptografarMensagem() {
   const textoOriginal = document.querySelector(".insercao-mensagem").value;
 
   if (verificarCaracteres(textoOriginal)) {
-    alert("🚫 Não são permitidas letras maiúsculas e acentuadas! 🚫");
+    alert("❌ Não são permitidas letras maiúsculas e acentuadas! ");
     return;
   }
 
@@ -41,7 +41,7 @@ function descriptografarMensagem() {
   const textoCriptografado = document.querySelector(".insercao-mensagem").value;
 
   if (verificarCaracteres(textoCriptografado)) {
-    alert(" Não são permitidas letras maiúsculas e acentuadas! ");
+    alert("❌ Não são permitidas letras maiúsculas e acentuadas! ");
     return;
   }
 
@@ -71,11 +71,11 @@ function copiarMensagem() {
   navigator.clipboard
     .writeText(textoParaCopiar)
     .then(() => {
-      showToast("Texto copiado ");
+      showToast("Texto copiado ◻️ ");
       limparCampo();
     })
     .catch((error) => {
-      console.error(`Erro ao copiar o texto: ${error}`);
+      console.error("Erro ao copiar o texto: ${error}");
     });
 }
 
