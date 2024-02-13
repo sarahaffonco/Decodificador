@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Honk:MORF,SHLN@35,27.4&display=swap" rel="stylesheet">
+  </head>
+  <body>
+   
+    <header>
+      <nav class="topo">
+        <img
+          class="imagem-topo" 
+          src="Assets\sakuragiffs.gif"
+          alt="Sakura conjurando Cartas Cl"
+        />
+        <div class="texto-topo"><h1>Bem-vindo(a) ao Decodificador ! ♥ </h1></div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="caixatexto">
+        <section class="insercao-texto">
+          <textarea
+            class="insercao-mensagem" placeholder="Digite sua mensagem..."></textarea>
+          <div class="regra">
+            <p>Apenas letras minúsculas e sem acento</p>
+            <img src="Assets\exclamation.png" alt="ponto de examação" />
+          </div>
+          <div class="botoes">
+            <button
+              class="botao-criptografar"
+              onclick="criptografarMensagem(event)"
+            >
+              Criptografar
+            </button>
+            <button
+              class="botao-descriptografar"
+              onclick="descriptografarMensagem(event)"
+            >
+              Descriptografar
+            </button>
+          </div>
+        </section>
+        <section class="aviso">
+          <div class="aviso-texto">
+            <img class="aviso-imagem" src="Assets\giffbook.gif"/>
+            <h1 class="h1-campo-vazio">Nenhuma mensagem encontrada </h1>
+            <p class="p-campo-vazio">
+              Digite uma mensagem que você deseja <br />
+              criptografar ou descriptografar.
+            </p>
+            <div class="aviso-resposta">
+              <p class="aviso-resposta-paragrafo"></p>
+            </div>
+          </div>
+          <div class="botoes">
+            <button class="botao-copiar" onclick="copiarMensagem()">
+              Copiar
+            </button>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <p>Create by Sarah Affonco</p>
+      <div class="footer-icons">
+        <a href="https://github.com/sarahaffonco" target="_blank" class="icon">
+          <img src="Assets\github.png" class="imagem-icon" />
+        </a>
+      </div>
+    </footer>
+    <script src="encode.js"></script>
+   </body>
+</html>
