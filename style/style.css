@@ -36,8 +36,7 @@ background: radial-gradient(
     #EEA5A6
     );
     background-attachment: fixed;
-    overflow: hidden;
-}
+    }
 
 .topo {
     display: flex;
